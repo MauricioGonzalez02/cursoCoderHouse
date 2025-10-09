@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--BOOTSTRAP--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">  
+</head>
+<body>    
+    <!--NAVEGADOR CON BOOTSTRAP-->
+    <header>
+    <nav class="navbar encabezado">
+        <div class="container-fluid navegador">
+            <div class="contenedorLogo">
+            <a href="../index.html"><img src="../medios/logo.png" class="logo" alt=""></a>
+            </div>
+            <button class="navbar-toggler color-boton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end emergente" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MÁS...</h5>
+                    <button type="button" class="btn-close color-boton" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <li><a href="../index.html" class="enlaces">Inicio</a></li>
+                            <li><a href="./top.html" class="enlaces">Canciones mas populares</a></li>
+                            <li><a href="#" class="enlaces">Contactanos</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main>       
+        <!--TITULO-->
+        <h1>ENVIANOS UN MENSAJE!</h1>
+        <!--FORMULARIO PARA ENVIAR MENSAJES AL PROPIETARIO DE LA PAGINA - HECH0 CON BOOTSTRAP Y FLEX-->
+        <section class="inicio">
+            <h2>Completa tu informacion</h2>
+            <p>Puedes enviarnos información, comentrios, sugerencias o lo que quieras. Trataremos de responderte cuanto antes!</p>
+            <form action="contacto" class="contacto">
+                <div class="contactos2">
+                    <div class="margen">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Nombre:">
+                    </div>
+                    <div class="margen">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Apellido:">
+                    </div>   
+                </div>
+                <div class="contactos2">
+                    <div class="margen">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email:">
+                    </div>
+                    <div class="margen">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email:">
+                    </div>
+                </div>
+                <div class="contactos2">
+                    <div class="margen">
+                        <textarea class="form-control" placeholder="Comentarios" id="floatingTextarea"></textarea>
+                    </div>
+                </div>
+                <div class="margen">
+                    <button type="submit" class="btn btn-danger btnes">Enviar</button>                
+                </div>
+            </form> 
+        </section>
+    </main>
+
+    <footer>
+        <!--ENLACES A PAGINAS EXTERNAS CON BOTONES DE BOOTSTRAP-->
+        <p>Siguelos en sus paginas oficiales!</p>
+        <div class="social">
+            <button type="button" class="btn btn-danger btnes"><a href="https://open.spotify.com/artist/711MCceyCBcFnzjGY4Q7Un" target="_blank" class="enlacesFooter" title="Spotify">Spotify</a></button>
+            <button type="button" class="btn btn-danger btnes"><a href="https://www.youtube.com/channel/UCB0JSO6d5ysH2Mmqz5I9rIw?sub_confirmation=1" class="enlacesFooter" target="_blank" title="YouTube">Youtube</a></button>
+            <button type="button" class="btn btn-danger btnes"><a href="https://facebook.com/acdc/" target="_blank" title="Facebook" class="enlacesFooter">Facebook</a></button>
+            <button type="button" class="btn btn-danger btnes"><a href="https://instagram.com/acdc/" target="_blank" title="Instagram" class="enlacesFooter">Instagram</a></button>
+            <button type="button" class="btn btn-danger btnes"><a href="https://twitter.com/acdc/" target="_blank" title="Twitter" class="enlacesFooter">X</a></button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
