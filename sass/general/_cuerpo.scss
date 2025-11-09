@@ -1,0 +1,150 @@
+h1{
+    padding: 5px;
+    margin: 5px;
+    color: $rojo;
+    text-align: center;
+}
+//informacion principal
+.inicio{
+    background-color: $negro;
+    text-align: center;
+    color: $beige;
+    margin: 20px;
+    padding: 10px;
+    h2{
+        color: $rojo;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    img{
+        width: 50%;
+        height: auto;
+        padding: 5px;
+        margin: 5px;
+    }
+    .iframes{
+        width: 50%;
+        height: 315px;
+        margin: 5px;
+        padding: 5px;
+        border: solid $gris 2px;
+    }
+    .contacto{
+        @include flex(column,center,center);
+        padding: 5px;
+        margin: 5px;
+        .contactos2{
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            margin: 5px;
+            .margen{
+                padding: 5px;
+                margin: 5px;
+            }
+            .btnes{
+                padding: 1%;
+                color: $beige;
+            }
+        }
+    }
+}
+//informacion secundaria
+article{
+    background-color: $negro;
+    color: $beige;
+    margin: 20px;
+    h2{
+        color: $rojo;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    h3{
+        color: $rojo;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    .banda{
+        @include flex(row,center,center);
+        .enlaces {
+            text-decoration: none;
+            color:$rojo;
+            padding: 5px;
+            margin: 5px;   
+        }
+    }
+    .contenedorGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,1fr);
+        place-items: center;
+        .item1{
+            @include flex(column,center,center);
+            .artistas{
+                @include artista; 
+            }
+        }
+        .item2{
+            border: solid $gris 2px;
+            justify-items: center;
+            align-items: center;
+        }
+        .item3{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            @include flex(column,center,center);
+            .artistas{
+                @include artista; 
+            }
+        }
+        .item4{
+            border: solid $gris 2px;
+            justify-items: center;
+            align-items: center;
+        }
+        .item5{
+            @include flex(column,center,center);
+            .artistas{
+                @include artista; 
+            }
+        }
+        .item6{
+            border: solid $gris 2px;
+            justify-items: center;
+            align-items: center;
+        }
+        .item7{
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            @include flex(column,center,center);
+            .artistas{
+                @include artista; 
+            }
+        }
+        .item8{
+            border: solid $gris 2px;
+            justify-items: right;
+            align-items: center;
+        }
+        .item9{
+            @include flex(column,center,center);
+            .artistas{
+                @include artista; 
+            }
+        }
+        .item10{
+            border: solid $gris 2px;
+            justify-items: center;
+            align-items: center;
+        }
+    }
+
+}

@@ -1,0 +1,18 @@
+footer{
+    background-color: $gris;
+    text-align: center;
+    color:$beige;
+    padding: 10px;
+    margin: 20px;
+    .social{
+        @include flex(row,space-evenly,center);
+        .btnes{
+            padding: 1%;
+            color: $beige;
+        }
+        .enlacesFooter{
+            text-decoration: none;
+            color:$beige;
+        }
+    }
+}

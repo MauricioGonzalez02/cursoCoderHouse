@@ -1,0 +1,55 @@
+//---------------QUERY PARA MOBILE----------
+body{
+    font-size: 16px;
+    background-color: $gris;
+    //encabezado
+    header{
+        background-color: $negro;
+        .encabezado{
+            background-color: $negro;
+            .navegador{
+                background-color: $negro;
+                .contenedorLogo{
+                    width: 50%;
+                    .logo{
+                        height: 75px;
+                    }
+                }
+            }
+        }
+    } 
+    .inicio{
+        .iframes{
+        width: 75%;
+        height: auto;
+        border: 0;
+    }
+    }
+    article{
+        .banda{
+            @include flex(column,center,center);
+        }
+        .contenedorGrid{
+            @include flex(column, center, center);
+            .item2{
+                border: 0;
+            }
+            .item4 {
+                border: 0;
+            }
+            .item6{
+                border: 0;
+            }
+            .item8{
+                border: 0;
+            }
+            .item10{
+                border: 0;
+            }
+        }
+    }
+    footer{
+        background-color: $negro;
+    }
+
+}     

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+$font: "New Rocker", system-ui;
+
+$black: hsl(0, 0%, 0%);
+$negro: #232931;
+$rojo: #F73859;
+$beige: #F1D18A;
+$gris: #4e4d4d;
+
+@mixin flex ($direction,$justify,$aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin artista{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    border: solid $gris 2px;  
+}

@@ -1,0 +1,21 @@
+@import "./general/variables";
+body{
+    background-color: $negro ;
+    font-family: $font;
+    //enzabezado de la pagina
+    @import "./general/encabezados";
+    //cuerpo de la pagina
+    @import "./general/cuerpo";
+    //pie de la pagina
+    @import "./general/footer";
+}
+
+@media (max-width: 480px){
+    //media querys
+    @import "./general/querymobile";
+}
+
+@media (min-width: 481px) and (max-width: 978px){
+    //media querys
+    @import "./general/querytablet";
+}

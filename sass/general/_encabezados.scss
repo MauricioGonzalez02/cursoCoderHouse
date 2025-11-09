@@ -1,0 +1,40 @@
+/*ENCABEZADOS*/
+header{
+    @include flex(row,space-around,center);
+    color: $rojo ;  
+    background-color: $gris ;
+    .encabezado{
+        width: 100%;
+        height: auto;
+        background-color: $gris;
+        .navegador{
+            width: 100%;
+            height: auto;
+            background-color: $gris;
+            .contenedorLogo{
+                display: flex;
+                justify-content: left;
+                width: 60%;
+                padding-left: 10px;
+                .logo{
+                    height: 100px;
+                    width: auto;
+                }
+            }
+            .color-boton{
+                background-color: $rojo;
+                margin: 10px;
+            }
+            .emergente{
+                background-color: $gris;
+                color: $beige;
+                .enlaces {
+                    text-decoration: none;
+                    color:$rojo;
+                    padding: 5px;
+                    margin: 5px;   
+                }
+            }
+        }
+    }
+}

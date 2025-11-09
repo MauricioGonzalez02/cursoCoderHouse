@@ -1,0 +1,45 @@
+body{
+    font-size: 20px;
+    background-color: $negro;
+    header{
+        background-color: $black;
+        .encabezado{
+            background-color: $black;
+            .navegador{
+                background-color: $black;
+            }
+        }
+    }
+    .inicio{
+        .iframes{
+            width: 80%;
+            height: 300px;
+            border-color: $black
+        }
+    }
+    article{
+        .banda{
+            @include flex(column,center,center);
+        }
+        .contenedorGrid{
+            .item2{
+                border: 0;
+            }
+            .item4 {
+                border: 0;
+            }
+            .item6{
+                border: 0;
+            }
+            .item8{
+                border: 0;
+            }
+            .item10{
+                border: 0;
+            }
+        }
+    }
+    footer{
+        background-color: $black;
+    }
+}
